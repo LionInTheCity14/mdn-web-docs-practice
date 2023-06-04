@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal javascript application</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () =>{
+      function createParagraph(){
+        const paraEl = document.createElement("p");
+        paraEl.textContent = "You clicked the button!";
+        document.body.appendChild(paraEl);
+      }
+      const buttons = document.querySelectorAll("button");
+      for(const button of buttons){
+        button.addEventListener("click", createParagraph);
+      }
+    });
+  </script>
+</head>
+<body>
+  <button>click me!</button>
+</body>
+</html>

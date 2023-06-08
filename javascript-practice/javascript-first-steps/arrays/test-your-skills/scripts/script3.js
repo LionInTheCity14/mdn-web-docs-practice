@@ -1,6 +1,12 @@
 let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
 // Add your code here
+myArray.pop();
+myArray.push("varun", "sahil");
+for(let i = 0; i < myArray.length; i++){
+  myArray[i] = `${myArray[i]}(${i})`;
+}
+const myString = myArray.join("-");
 
 // Don't edit the code below here!
 

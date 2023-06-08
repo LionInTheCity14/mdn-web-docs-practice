@@ -1,4 +1,7 @@
-// Add your code here
+    // Add your code here
+    const myArray = ["Honda City", "Tata Harrier", "Land Rover Velar", "BMW 3 series"];
+    myArray[0] = "XUV700";
+    myArray[1] = "Fortuner";
 
     // Don't edit the code below here!
 

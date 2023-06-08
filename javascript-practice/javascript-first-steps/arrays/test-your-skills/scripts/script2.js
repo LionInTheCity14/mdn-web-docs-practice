@@ -1,5 +1,7 @@
-let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
-
+const myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
+const myArray = myString.split("+");
+const arrayLength = myArray.length;
+const lastItem = myArray[arrayLength - 1];
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

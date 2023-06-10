@@ -1,9 +1,14 @@
-let season = 'summer';
+let season = 'winter';
 let response;
 
-// Add your code here
-
-// Don't edit the code below here!
+if(season === "summer"){
+  response = "Turn on the AC";
+}else if(season === "winter"){
+  response = "Take a tea break";
+}
+else{
+  response = "We don't know what season it is."
+}
 
 const section = document.querySelector('section');
 

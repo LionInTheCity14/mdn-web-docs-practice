@@ -4,9 +4,11 @@ let pwd = 'cheese';
 let machineResult;
 let pwdResult;
 
-// Add your code here
-
-// Don't edit the code below here!
+if(machineActive){
+  pwd === "cheese" ?  pwdResult = "Logged In Successfully." : pwdResult = "Failed Attempt To Login";
+}else{
+  machineResult = "Please switch on the machine!";
+}
 
 const section = document.querySelector('section');
 

@@ -1,14 +1,20 @@
 const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d');
 
-    const x = 50;
-    const y = 60;
-    const width = 100;
-    const height = 75;
-    const color = 'blue';
+const x = 50;
+const y = 60;
+const width = 100;
+const height = 75;
+const color = 'blue';
 
-    // Add your code here
+function draw(){
+    ctx.clearRect(0, 0, 0, 0);
+    ctx.width = width;
+    ctx.height = height;
+    ctx.x = x;
+    ctx.y = y;
+}
+draw();
 
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
+const section = document.querySelector('section');
+canvas.appendChild(ctx);

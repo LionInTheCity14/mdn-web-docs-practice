@@ -1,10 +1,18 @@
 const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
-    const para = document.createElement('p');
+const para = document.createElement('p');
 
-    // Add your code here
+function random(length = 0){
+    return Math.floor(Math.random() * length);
+}
 
-    // Don't edit the code below here!
+function chooseName(names){
+    const length = names.length;
+    const randomNo = random(length);
+    para.textContent = names[randomNo];
+}
 
-    const section = document.querySelector('section');
+chooseName(names);
 
-    section.appendChild(para);
+const section = document.querySelector('section');
+
+section.appendChild(para);

@@ -1,0 +1,13 @@
+.hidden{
+  visibility: hidden;
+}
+div{
+  align-items: center;
+  background-color: lightgray;
+}
+video{
+  background-color: rebeccapurple;
+  padding: 20px;
+  width: 70%;
+  height: 70%;
+}

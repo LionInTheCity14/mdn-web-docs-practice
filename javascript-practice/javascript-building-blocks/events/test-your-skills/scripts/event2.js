@@ -17,4 +17,25 @@ const size = 30;
 
 drawCircle(x, y, size);
 
-// Add your code here
+document.addEventListener("keydown", (evt) => {
+  console.log(evt.key);
+  const key = evt.key;
+  switch(key){
+    case "w":
+      y -= 5;
+      drawCircle(x,y, size);
+    break;
+    case "s":
+      y += 5;
+      drawCircle(x,y, size);
+    break;
+    case "a":
+      x -= 5;
+      drawCircle(x,y, size);
+    break;
+    case "d":
+      x += 5;
+      drawCircle(x,y, size);
+    break;
+  }
+})

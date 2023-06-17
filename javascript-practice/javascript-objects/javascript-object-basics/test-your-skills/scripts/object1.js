@@ -7,11 +7,11 @@ const cat = {
   }
 }
 
-// Add your code here
+const catName = cat["name"];
 
+cat.greeting();
 
-
-// Don't edit the code below here!
+cat["color"] = "black";
 
 const section = document.querySelector('section');
 

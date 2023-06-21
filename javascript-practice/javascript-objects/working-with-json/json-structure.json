@@ -1,0 +1,27 @@
+{
+  "squadName": "Super hero squad",
+  "homeTown": "Metro City",
+  "formed": 2023,
+  "secretBase": "Super tower",
+  "active": true,
+  "members":[
+    {
+      "name": "Varun",
+      "age": 22,
+      "secretIdentity": "Ankush",
+      "power":["Radiation resistance", "Turning tiny", "Radiation blast"]
+    },
+    {
+      "name": "Sahil",
+      "age": 22,
+      "secretIdentity": "Motu",
+      "power":["Million tonne punch", "Damage resistance", "Superhuman reflexes"]
+    },
+    {
+      "name": "Sunil",
+      "age": 22,
+      "secretIdentity": "Chotu",
+      "power":["Immortality","Heat Immunity","Inferno","Teleportation"]
+    }
+  ]
+}

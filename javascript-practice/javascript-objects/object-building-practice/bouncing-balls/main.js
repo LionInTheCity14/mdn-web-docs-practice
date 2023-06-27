@@ -100,3 +100,10 @@ function loop(){
   requestAnimationFrame(loop);
 }
 
+const startBtn = document.querySelector("#start");
+startBtn.addEventListener("click", () => {
+  // startBtn.style.visibility = "hidden";
+  // document.body.removeChild(startBtn);
+  startBtn.parentNode.removeChild(startBtn);
+  loop();
+});

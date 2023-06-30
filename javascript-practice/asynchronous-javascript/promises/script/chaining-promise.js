@@ -13,9 +13,16 @@ const fetchPromise = fetch(
 
 // promise chaining
 
+// Elegant feature of promises is that then() itself returns a
+// promise, which will be completed with the result of the
+// function passed to it. This means that we can (and certainly
+// should) rewrite the above code like this:
+
 // fetchPromise
 //   .then((response) => response.json())
 //   .then((data) => console.log(data[0].name))
+
+// fetchPromise.then((response) => response.json()).then((data) => console.log(data[0].name));
 
 // checking if request accepted
 
@@ -26,4 +33,7 @@ fetchPromise
     }
     return response.json();
   })
-  .then((data) => console.log(data[0].name));
+  .then((data) => {
+    console.log(data[0].name);
+  });
+

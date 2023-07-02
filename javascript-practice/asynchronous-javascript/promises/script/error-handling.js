@@ -28,3 +28,5 @@ fetchPromise
   .catch((error) => {
     console.error(`Could not get products: "${error}"`);
   });
+
+  

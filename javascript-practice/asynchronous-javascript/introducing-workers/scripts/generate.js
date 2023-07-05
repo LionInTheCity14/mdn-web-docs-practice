@@ -24,7 +24,7 @@ function generatePrimes(quota) {
         if (isPrime(candidate))
             primes.push(candidate);
     }
-// When we have finished, send a message to the main thread,
-// including the number of primes we generated.
-postMessage(primes.length, "hello message");
+    // When we have finished, send a message to the main thread,
+    // including the number of primes we generated.
+    postMessage(primes.length);
 }

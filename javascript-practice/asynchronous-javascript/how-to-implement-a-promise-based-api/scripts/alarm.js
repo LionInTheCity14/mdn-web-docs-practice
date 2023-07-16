@@ -27,8 +27,8 @@ function alarm(person, delay){
 
 btn.addEventListener("click", async () => {
     try{
-    const message = await alarm(namee.value, delay.value);
-    output.textContent = message;
+        const message = await alarm(namee.value, delay.value);
+        output.textContent = message;
     }catch(error){
         output.textContent = `Couldn't set alarm: ${error}`;
     }

@@ -3,7 +3,19 @@ li {
   }
 
   li button {
-    font-size: 8px;
+    font-size: 15px;
     margin-left: 20px;
-    color: black;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px;
+    border-radius: 10%;
+  }
+
+  #inputBtn{
+    color: white;
+    background-color: rgb(21, 96, 194);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
   }

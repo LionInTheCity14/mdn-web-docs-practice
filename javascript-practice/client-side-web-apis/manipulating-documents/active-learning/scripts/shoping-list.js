@@ -18,7 +18,11 @@ function func(){
     spanEl.textContent = inputText;
     deleteBtn.textContent = "Delete";
 
-    list.appendChild(listItem);
+    if(inputText.trim() === "")             // if user does not enter anything then a 
+        alert("Plz input a valid text.");   // alert will pop up.
+    else
+        list.appendChild(listItem);
+
 
     deleteBtn.addEventListener("click", () => list.removeChild(listItem));
 
